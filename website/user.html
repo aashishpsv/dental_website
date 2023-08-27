@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information & Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Information & Appointment</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="details">Necessary Details:</label>
+            <textarea id="details" name="details" rows="4" required></textarea>
+
+            <h2>Book Appointment</h2>
+            <label for="appointment-date">Select Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+            
+            <label for="appointment-time">Select Time:</label>
+<input type="time" id="appointment-time" name="appointment-time" required>
+
+            <!-- Inside the form -->
+            <h2>Appointment Preferences</h2>
+                <label for="reschedule-confirm">Is it okay if your appointment gets rescheduled?
+                    <input type="checkbox" id="reschedule-confirm" name="reschedule-confirm">
+                </label>
+
+
+
+            <button type="button" id="submit-btn">Book Appointment</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

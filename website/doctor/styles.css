@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('doct.jpg'); /* Replace with your image's file name or path */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+}
+
+.container {
+    width: 100%; /* Adjust to desired width */
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.appointments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; /* Add padding for spacing between cards */
+}
+
+.appointment {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Four appointments in one row */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.appointment:hover {
+    background-color: #e6e6e6;
+    transform: translateY(-5px);
+}
+
+.appointment h2, .appointment p {
+    margin: 0;
+}
+
+.appointment p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    background-color: rgba(244, 244, 244, 0.8); /* Transparent background color for the container div */
+    /* ... other CSS properties ... */
+}
+
+.appointments {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background color for the appointments div */
+    /* ... other CSS properties ... */
+}
