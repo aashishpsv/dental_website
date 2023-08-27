@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: 'doct.jpg';
+            background-image: url('doct.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -56,7 +56,7 @@
             const password = document.getElementById("password").value;
 
             if (username === "doctor" && password === "123") {
-                window.location.href = "doct.html"; // Redirect to another page
+                window.location.href = "http://127.0.0.1:3000/dent/dentelo/doctor/doc.html"; // Redirect to another page
             } else {
                 alert("Invalid credentials. Please try again.");
             }
